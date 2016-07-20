@@ -1,0 +1,54 @@
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<script>
+function operation(number1, number2);
+
+switch (operation) {
+  case "+": return parseint(number1) + parseint(number2);
+    /* Instructions à exécuter lorsque le résultat
+     de l'expression correspond à valeur1 */
+    document.write("number1+number2");
+    break;
+  case "-": return number1 - number2;
+    /* Instructions à exécuter lorsque le résultat
+     de l'expression correspond à valeur2*/
+
+    break;
+  ...
+  case "*": return number1 * number2;
+    // Instructions à exécuter lorsque le résultat
+    // de l'expression à valeurN
+
+    break;
+  case "/": if(number2 != 0) return number1 / number2;    // Instructions à exécuter lorsqu'aucune des valeurs
+    // ne correspond
+    else return "division par 0";
+    break;
+
+}
+</script>
+<body>
+<form method="POST" name="op">
+<table border="0" cellpadding="3" cellspacing="0" width="100%">
+  <tr>
+    <td width="55%" valign="top">Indiquez 2 chiffres  :<br>
+      <input type="text" name="chiffre1" size="10">
+      <input type="text" name="chiffre2" size="10">
+      <p>Résultat :<br>
+      <input type="text" name="resultat" size="20">
+    </td>
+      <td width="45%" valign="top">Opération :<br>
+      <select size="4" onChange="document.op.resultat.value = operation(document.op.chiffre1.value, document.op.chiffre2.value, this.selectedIndex)">
+        <option>addition</option>
+        <option>soustraction</option>
+        <option>multiplication</option>
+        <option>division</option>
+      </select>
+    </td>
+  </tr>
+</table>
+</body>
+
+</html>

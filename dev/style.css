@@ -1,0 +1,29 @@
+#body{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  display: flex;
+}
+.nom{
+
+}
+img{
+  display: flex;
+  align-items: baseline;
+  width: 100px;
+  height: 100px;
+}
+#info{
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+.pro{
+  display: flex;
+  align-items: baseline;
+}
+p{
+display: flex;
+align-items: baseline;
+}
